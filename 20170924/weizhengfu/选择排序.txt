@@ -1,0 +1,30 @@
+public class Select
+{
+	public static void main(String[] args)
+	{	
+		//Ñ¡ÔñÅÅĞò
+		int[] array = new int[]{4,6,15,14,43,16,7};
+		int min=0;
+		for (int i=0;i<array.length-1 ;i++ ) 
+		{
+			min=i;
+			for (int j=i+1;j<array.length ;j++ ) 
+			{
+				if (array[min]>array[j]) 
+				{
+					min=j;		
+				}	
+			}
+			if (i!=min) 
+			{	
+				int temp=array[i];
+				array[i]=array[min];
+				array[min]=temp;
+			}
+		}
+		for (int i=0;i<array.length ;i++ ) 
+		{
+			System.out.print(array[i] + "\t");	
+		}
+	}
+}
