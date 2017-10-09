@@ -1,0 +1,14 @@
+import java.util.*;
+public class Conversion
+{
+	public static void main(String[] args) 
+	{	
+		//×ÔÈ»ÅÅÐò
+		char[] c = new char[]{'h','e','l','w','r','d'};
+		Arrays.sort(c);
+		for (char a : c) 
+		{
+			System.out.print(a + "\t");
+		}
+	}
+}
