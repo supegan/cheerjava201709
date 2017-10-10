@@ -19,11 +19,16 @@ public class Pay
 			System.out.print("消费金额超过:" + payType[i] +"  移除此支付选项\n");	
 		}
 		int temp = payType.length-i;
-		String[] j = new String [temp];
+		String[] b = new String [temp];
+		for(int j = 0; j < temp; j++)
+			{
+				b[j] = payType[i];
+				i++;
+			}
 		System.out.print("移除后的支付选项为:");
-		for (String b : j ) 
+		for (String c : b ) 
 		{
-			System.out.print(b + "  ");
+			System.out.print(c + "  ");
 		}
 	}	
 }
