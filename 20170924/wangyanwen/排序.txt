@@ -1,0 +1,13 @@
+import java.util.*;
+public class Paixu
+{
+	public static void main(String[] args)
+	{
+		String[] pai = {"g","e","l","w","f","d"};
+		Arrays.sort(pai);
+		for( int i = 0;i<pai.length;i++)
+		{
+			System.out.print(pai[i] + "\t");
+		}
+	}
+}
