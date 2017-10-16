@@ -1,0 +1,48 @@
+import java.util.*;
+public class Resume
+{
+	String name;  //姓名
+	String gender;//性别
+	int age;	  //年龄
+	int stature; //身高
+	int weight;  //体重
+	String nativ;//籍贯
+	String census;//户籍
+	String nation;//名族
+	String education;//学历
+	String marital; //婚姻状况
+	String work;   //工作
+	public void enroll(String b)
+	{
+		this.work = b;
+		System.out.println("恭喜你被录取工作是" + this.work);
+	}
+	public static void main(String[] args) 
+	{
+		Resume k = new Resume();
+		Scanner sc = new Scanner(System.in);
+		System.out.print("应聘的工作岗位：");
+		String b = sc.next();
+		System.out.print("姓名：");
+		k.name = sc.next();
+		System.out.print("性别：");
+		k.gender = sc.next();
+		System.out.print("年龄：");
+		k.age = sc.nextInt();
+		System.out.print("身高：");
+		k.stature = sc.nextInt();
+		System.out.print("体重：");
+		k.weight = sc.nextInt();
+		System.out.print("籍贯：");
+		k.nativ = sc.next();
+		System.out.print("户籍：");
+		k.census = sc.next();
+		System.out.print("名族：");
+		k.nation = sc.next();
+		System.out.print("学历：");
+		k.education = sc.next();
+		System.out.print("婚姻状况：");
+		k.marital = sc.next();
+		k.enroll(b);
+	}
+}
