@@ -7,6 +7,11 @@ public class Switch
 		a = a.replace("username","用户名");
 		a = a.replace("password","密码");
 		a = a.replace("phone","手机号码");
-		System.out.println(a); 
+		System.out.println(a);
+		String[] b = a.split(";");
+		for (String c : b) 
+		{
+		 	System.out.println(c);
+		}  
 	}
 }
