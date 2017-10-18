@@ -1,0 +1,45 @@
+import java.util.*;
+public class Mp3
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("欢迎使用 爱用不用Mp3\n正在播放音乐 东京热");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Y进入音量加减/N进入切换歌曲");
+		String a = sc.next();
+		if (a.equals("y"))
+		{	
+			System.out.println("1:静音 2:50% 3:100%");
+			int b = sc.nextInt();
+			switch (b) 
+			{
+				case 1:
+					System.out.print("当前音量为静音");
+					break;
+				case 2:
+					System.out.print("当前音量为50%");
+					break;
+				case 3:
+					System.out.print("当前音量为100%");
+					break;
+			}
+		}
+		else if (a.equals("n")) 
+		{
+			System.out.println("1:上一首 2:下一首");
+			int c = sc.nextInt();
+			switch (c) 
+			{
+				case 1:
+					System.out.print("切换上一首歌曲");
+					break;
+				case 2:
+					System.out.print("切换下一首歌曲");
+			}
+		}
+		else
+		{
+			System.out.print("谢谢使用正在退出");
+		}
+	}
+}
