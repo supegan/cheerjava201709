@@ -16,7 +16,7 @@ public class CheckCellPhone
 */
 		if(str1.length == 11)
 		{
-			if(str1[1].equals(num[3]) || str1[1].equals(num[8]))
+			if(str1[0].equals(num[1]) && (str1[1].equals(num[3]) || str1[1].equals(num[8])))
 			{
 				int k = 0;
 				for(int i = 0; i < 11; i++)
