@@ -4,6 +4,12 @@ public class MusicPla{
 	public String volum;
 
 	public void songCha(String s){
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("请按按钮切换歌曲(l/n)：");
+		s=sc.next();
+
+		mp.song=s;
 		if(s.equals("l")){
 			System.out.println("切换歌曲"+song.replace("l","上一首"));
 		}else if(s.equals("n")){
@@ -14,6 +20,12 @@ public class MusicPla{
 	}
 
 	public void volumTur(String v){
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("请按按钮调节音量(u/d)：");
+		v=sc.next();
+
+		mp.volum=v;
 		if(v.equals("u")){
 			System.out.println("调节音量"+volum.replace("u","升高"));
 		}else if(v.equals("d")){
@@ -25,16 +37,8 @@ public class MusicPla{
 
 	public static void main(String[] args){
 		MusicPla mp=new MusicPla();
-		Scanner sc=new Scanner(System.in);
-
-		System.out.println("请按按钮切换歌曲(l/n)：");
-		String s=sc.next();
-		mp.song=s;
+		
 		mp.songCha(s);
-
-		System.out.println("请按按钮调节音量(u/d)：");
-		String v=sc.next();
-		mp.volum=v;
 		mp.volumTur(v);
 	}
 }
