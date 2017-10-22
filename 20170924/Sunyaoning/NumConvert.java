@@ -20,6 +20,9 @@ public class NumConvert
 
 		for(int i=0;i<5 ;i++ ){
 			int j=array[i];
+			if (i!=0 && i!=4 && ((j==0 && j+1=0 && j+2=0) || (j==0 && j+1==0) || (j+1==0 && j+2==0))) {
+				System.out.print("零");
+			}
 			if (i!=4 || j!=0) {
 				System.out.print(cha[j]);	
 			}
