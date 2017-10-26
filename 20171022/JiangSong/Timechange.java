@@ -7,7 +7,7 @@ public class TimeChange
 	public static void main(String[] args) throws ParseException
 	{
 		String time = "2017-07-17 17:50:55";
-		SimpleDateFormat formatter=new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");    
+		SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");    
 		Date date = formatter.parse(time);    
 		long afterTime=(date.getTime()/1000) + 60*30;    
 		date.setTime(afterTime*1000);    
